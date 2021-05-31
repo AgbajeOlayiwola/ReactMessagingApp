@@ -1,0 +1,25 @@
+.messageBox_Div2{
+    height: 301px;
+    background-color:white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border:none;
+}
+.messageBox_Text{
+    border: none;
+    border-bottom-left-radius: 20px;
+    height: 30px;
+    padding-left: 20px;
+}
+input:focus{
+    outline:none;
+}
+.messageBox_Send{
+    border-bottom-right-radius: 20px;
+    border:none;
+    background-color: #023e8a;
+    color: white;
+    height: 34px;
+    width: 83px;
+    cursor: pointer;
+}
