@@ -1,12 +1,15 @@
 import './App.css';
-import { MessageBox } from './Component';
-import { Box } from './Disp';
+import { Box, Signin } from './Disp';
+import { UserContextProvider } from '././Component/cont';
 
 function App() {
   return (
+    <UserContextProvider>
     <div className="App">
+      <Signin/>
       <Box/>
     </div>
+    </UserContextProvider>
   );
 }
 

@@ -1,10 +1,13 @@
 import React from 'react'
 import './style.css'
 
-export const MessageSend = () => {
+export const MessageSend = ({message}) => {
+
     return (
-        <div>
-            
+        <div className='messagesend'>
+            <div className="messagesend_Message">
+                <p>{message}</p>
+            </div>
         </div>
     )
 }

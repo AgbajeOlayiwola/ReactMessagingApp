@@ -1,0 +1,10 @@
+.login_Button{
+    width: 100%;
+    padding: 10%;
+    background-color:#5b1a60;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 17px 18px 23px #eab5e4;;
+    cursor: pointer;
+    font-weight: 50px;
+}

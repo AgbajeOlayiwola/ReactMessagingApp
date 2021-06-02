@@ -23,3 +23,17 @@ input:focus{
     width: 83px;
     cursor: pointer;
 }
+.messageBox_DisplayName{
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+.messageBox_P{
+    margin: 0px;
+}
+.messageBox_Box{
+    widows: 100%;
+}
