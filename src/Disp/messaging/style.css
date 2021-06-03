@@ -1,6 +1,6 @@
-.box{
-    padding-top: 12%;
-    padding-bottom: 13%;
+.messageing{
     display: flex;
     justify-content: center;
+    height: cover;
+    padding: 25%;
 }

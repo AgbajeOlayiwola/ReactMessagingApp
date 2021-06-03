@@ -29,11 +29,6 @@ const MessageBox = ({messages}) => {
         <div className='messageBox'>
         {user ?
             (<div className='messageBox_Div'>
-                <div className='messageBox_Div2'>
-                <MessageRec/>
-                <MessageSend/>
-
-                </div>
                     <input type='text' 
                     className='messageBox_Text'
                     value={message}
