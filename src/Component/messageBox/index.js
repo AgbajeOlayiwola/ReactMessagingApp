@@ -3,12 +3,11 @@ import MessageRec from '../messageRec';
 import MessageSend from '../messageSend';
 import './style.css'
 
-export const Messagearea = ({name, message}) => {
+export const Messagearea = () => {
     return (
         <div className='messageArea'>
                 <div className='messageArea_div'>
-                    <p>{name}</p>
-                    <p>{message}</p>
+                    <MessageSend/>
                 </div>
         </div>
     )

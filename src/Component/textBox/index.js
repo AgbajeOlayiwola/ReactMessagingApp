@@ -1,6 +1,6 @@
 import React,{useState, useContext} from 'react'
 import './style.css'
-import { MessageRec, MessageSend, Login } from '..';
+import { MessageRec, MessageSend, Login, Messagearea } from '..';
 import { db} from '../../firebase';
 import firebase from 'firebase';
 import UserContext from '../cont'
@@ -29,6 +29,7 @@ const MessageBox = ({messages}) => {
         <div className='messageBox'>
         {user ?
             (<div className='messageBox_Div'>
+            <Messagearea/>
                     <input type='text' 
                     className='messageBox_Text'
                     value={message}

@@ -6,7 +6,6 @@ export const Box = () => {
 
     return (
         <div className='messageing'>
-            <Messagearea/>
             <MessageBox/>
             
         </div>
