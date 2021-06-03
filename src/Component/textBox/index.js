@@ -1,6 +1,6 @@
 import React,{useState, useContext} from 'react'
 import './style.css'
-import { MessageRec, MessageSend, Login, Messagearea } from '..';
+import { Login, Messagearea } from '..';
 import { db} from '../../firebase';
 import firebase from 'firebase';
 import UserContext from '../cont'

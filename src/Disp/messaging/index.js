@@ -1,13 +1,12 @@
 import React from 'react'
 import './style.css'
-import {  MessageBox, Messagearea } from '../../Component';
+import {  MessageBox } from '../../Component';
 
 export const Box = () => {
 
     return (
         <div className='messageing'>
             <MessageBox/>
-            
         </div>
     )
 }

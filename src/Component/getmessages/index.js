@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { db, storage } from '../../firebase';
+import { db } from '../../firebase';
 import MessageSend from '../messageSend';
 
 export const Messageing = () => {
@@ -13,14 +13,15 @@ export const Messageing = () => {
     }, [])
     return (
         <div className='box'>
+
         {messageing.map(({id, messageing})=>{
         return <MessageSend
         key={id}
         name={messageing.name}
         message={messageing.message}
+
         />
         })}
-            
         </div>
     )
 }
