@@ -4,10 +4,13 @@ import { MessageRec, MessageSend, Login } from '..';
 import { db} from '../../firebase';
 import firebase from 'firebase';
 import UserContext from '../cont'
-const MessageBox = ({messages, id}) => {
+import 'firebase/firestore'
+
+const MessageBox = ({messages}) => {
 
     const [message, setMessage] = useState('')
     const [user, setUser] = useContext(UserContext).user;
+
 
     const [messageArray, setMessageArray] = 
     useState(messages ? messages: []);
@@ -17,6 +20,7 @@ const MessageBox = ({messages, id}) => {
                 db.collection("messages").add({
                     timestamp: firebase.firestore.FieldValue.serverTimestamp(),
                     message: message,
+                    name: user.displayName
             })
             }
             setMessage('')
