@@ -10,8 +10,6 @@ display: flex;
 }
 .message_text{
     width: fit-content;
-    background-color: blue;
-    border-style: solid;
     padding: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -19,11 +17,16 @@ display: flex;
 }
 .message_Name{
     margin-left: 3px;
-    border-style: solid;
     padding: 6px;
     width: fit-content;
     border-radius: 58px;
     background-color: blue;
     height: 20px;
 
+}
+.sent{
+    background-color: blue;
+}
+.received{
+    background-color: #d3d3d3;
 }

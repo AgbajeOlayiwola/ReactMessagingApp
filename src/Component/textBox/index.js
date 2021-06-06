@@ -1,4 +1,4 @@
-import React,{useState, useContext} from 'react'
+import React,{useState, useContext, useRef} from 'react'
 import './style.css'
 import { Login, Messagearea, MessageSend } from '..';
 import { db} from '../../firebase';
@@ -9,6 +9,8 @@ import 'firebase/firestore'
 const MessageBox = ({messages}) => {
 
     const [message, setMessage] = useState('')
+    
+    const stat = useRef()
     const [user, setUser] = useContext(UserContext).user;
 
 
@@ -25,7 +27,12 @@ const MessageBox = ({messages}) => {
             }
     
             setMessage('')
+
+            stat.current.scrollIntoView({behavior:'smooth'})
         }
+
+
+
     return (
         <div className='messageBox'>
         {user ?
@@ -39,8 +46,9 @@ const MessageBox = ({messages}) => {
                     <div className='messageBox_Box'>
                     <div className='messageBox_DisplayName'><p className='messageBox_P'>{user.displayName}</p></div>
                     </div>
-
-    </div>):
+                    <div ref={stat}></div>
+    </div>
+    ):
             (
         <div className='login_Box'>
             <Login/>
