@@ -3,6 +3,7 @@
     border-bottom-left-radius: 20px;
     height: 30px;
     padding-left: 20px;
+    width: 401px;
 }
 input:focus{
     outline:none;
@@ -20,8 +21,8 @@ input:focus{
     background-color: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 80%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 17%;
 
 }
 .messageBox_P{

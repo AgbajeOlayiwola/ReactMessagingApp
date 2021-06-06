@@ -1,6 +1,6 @@
 import React,{useState, useContext} from 'react'
 import './style.css'
-import { Login, Messagearea } from '..';
+import { Login, Messagearea, MessageSend } from '..';
 import { db} from '../../firebase';
 import firebase from 'firebase';
 import UserContext from '../cont'
@@ -23,6 +23,7 @@ const MessageBox = ({messages}) => {
                     name: user.displayName
             })
             }
+    
             setMessage('')
         }
     return (

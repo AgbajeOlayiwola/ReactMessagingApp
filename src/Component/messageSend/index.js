@@ -1,16 +1,17 @@
 import React,{useContext} from 'react'
 import './style.css'
 import UserContext from '../cont'
-import Messageing from '../getmessages';
 
-export const MessageSend = ({message, name}) => {
+export const MessageSend = (props) => {
     const [user, setUser] = useContext(UserContext).user;
+    const {message,name} =props.message
+
     return (
         <div className='messagesend'>
             <div className="messagesend_Message">
-                <p className="message_text">hello Welcome to my Chat room</p>
-                <p className='message_Name'>{user.displayName}</p>
-            </div>
+                <p className="message_text">{message}</p>
+                <p className='message_Name'>{name}</p>
+            </div>  
         </div>
     )
 }

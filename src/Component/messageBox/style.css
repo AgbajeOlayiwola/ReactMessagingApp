@@ -1,5 +1,5 @@
 .messageArea{
-    height: 301px;
+    height: fit-content;
     background-color:white;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
